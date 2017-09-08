@@ -1,0 +1,165 @@
+@import "{zodiase:mdl-assets}/src/_variables";
+
+/* SideNav Branding */
+.brand-logo {
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+.brand-welcome {
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+.powered-by {
+	font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1px;
+  letter-spacing: 2px;
+	padding-top: 20px;
+	
+	&-big {
+		font-size: 23px;
+		font-weight: 300;
+		padding-bottom: 10px;
+		padding-top: 0px;
+	}
+}
+
+/* Brand Styling */
+.brand-bosa {
+	background-color: #67b1e2;
+}
+
+.brand-nova {
+	background-color: #4fb2ce;
+}
+
+.brand-demo {
+	background-color: #ffb200;
+}
+
+
+.card-top-space {
+	margin-top: 100px;
+}
+
+
+.legal {
+	margin-bottom: 0px;
+}
+
+.list-item {
+	text-decoration: none;
+	
+	&:hover {
+		opacity: 0.8;	
+	}
+}
+
+.day-history + .day-history {
+	border-top: 1px solid #BDBDBD;
+}
+
+.underline-header {
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333333;	
+}
+
+.browser-alert {
+	margin: 16px;
+	padding: 10px 10px;
+	background-color: #FFCDD2;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0px;
+}
+
+
+/* HELPERS - Move to separate SCSS file */
+.text-center {
+	text-align: center;
+}
+
+.spinner-padding {
+	margin-top: 20px;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.no-top-padding {
+	padding-top: 0px;
+}
+
+dialog {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translate(0, -50%) !important;
+}
+
+@media (max-width: 479px) {
+	._dialog_overlay{
+		display: none;
+	}
+}
+
+._dialog_overlay{
+	z-index: 0 !important;
+}
+
+.fake-link {
+	&:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+}
+
+.showMobile {
+	display: none;
+}
+
+.invisibleButton {
+	visibility: hidden;
+	position: absolute;
+}
+
+/* OVERRIDE */
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link--current {
+	background-color: inherit;
+	color: rgb(33, 33, 33);
+}
+
+.mdl-layout__drawer {
+	border: none;
+}
+
+/* MOBILE */
+@media (max-width: 479px) {
+	.mdl-grid {
+	  padding: 0px;
+	}
+	
+	.mdl-list__item.day-history {
+		padding: 0px 0 20px 0;
+	}
+	
+	.hideMobile {
+		display: none;
+	}
+	
+	.showMobile {
+		display: block;
+	}
+	
+}
+

@@ -1,0 +1,6 @@
+MongoDB shell version: 3.0.3
+connecting to: jello.modulusmongo.net:27017/i2nuxUdy
+2016-06-28T22:25:36.026-0700 E QUERY    Error: 4 Missing expected field "pwd"
+    at DB._authOrThrow (src/mongo/shell/db.js:1266:32)
+    at (auth):5:8
+    at (auth):6:2 at src/mongo/shell/db.js:1266

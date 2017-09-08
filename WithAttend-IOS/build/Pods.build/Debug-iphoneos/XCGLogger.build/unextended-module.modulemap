@@ -1,0 +1,10 @@
+framework module XCGLogger {
+  umbrella header "XCGLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module XCGLogger.__Swift {
+    exclude header "XCGLogger-Swift.h"
+}
